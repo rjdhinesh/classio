@@ -1,0 +1,145 @@
+/* Main attendance page */
+.teacher-attendance {
+    background: #f8faff;
+    color: #202b45;
+    border: 1px solid #dce4f2;
+}
+
+/* Main headings */
+.teacher-attendance h1,
+.teacher-attendance h2,
+.teacher-attendance h3 {
+    color: #172554;
+    font-weight: 750;
+}
+
+/* Paragraphs and descriptions */
+.teacher-attendance p {
+    color: #475569;
+    line-height: 1.7;
+}
+
+/* Attendance selection section */
+.attendance-selection,
+.mark-attendance {
+    background: #ffffff;
+    border: 1px solid #d5deed;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* Form labels */
+.teacher-attendance label {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+/* Input fields */
+.teacher-attendance input,
+.teacher-attendance select,
+.teacher-attendance textarea {
+    background: #ffffff;
+    color: #172554;
+    border: 1px solid #aebbd0;
+    border-radius: 8px;
+}
+
+/* Placeholder text */
+.teacher-attendance input::placeholder,
+.teacher-attendance textarea::placeholder {
+    color: #64748b;
+    opacity: 1;
+}
+
+/* Focus effect */
+.teacher-attendance input:focus,
+.teacher-attendance select:focus,
+.teacher-attendance textarea:focus {
+    border-color: #3157d5;
+    box-shadow: 0 0 0 3px rgba(49, 87, 213, 0.15);
+    outline: none;
+}
+
+/* Attendance summary */
+.attendance-summary {
+    background: #ffffff;
+    border: 1px solid #dce4f2;
+}
+
+.attendance-summary h2 {
+    color: #172554;
+}
+
+.attendance-card {
+    background: #f8faff;
+    border: 1px solid #dce4f2;
+    border-top: 4px solid #16865b;
+}
+
+.attendance-card h3 {
+    color: #334155;
+}
+
+.attendance-card p {
+    color: #146c43;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.subject-attendance,
+.attendance-history {
+    color: black;
+}
+
+
+/* Attendance table */
+.teacher-attendance table {
+    background: #ffffff;
+    color: #263449;
+    border: 1px solid #d5deed;
+}
+
+.teacher-attendance th {
+    background: #263f9f;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.teacher-attendance td {
+    color: #334155;
+    background: #ffffff;
+}
+
+.teacher-attendance tr:nth-child(even) td {
+    background: #f1f5fb;
+}
+
+/* Table dropdown */
+.teacher-attendance table select {
+    background: #ffffff;
+    color: #172554;
+    border: 1px solid #aebbd0;
+}
+
+/* Buttons */
+.teacher-attendance button {
+    background: #3157d5;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.teacher-attendance button:hover {
+    background: #1e3a8a;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 650px) {
+    .attendance-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-attendance {
+        padding: 18px;
+    }
+}

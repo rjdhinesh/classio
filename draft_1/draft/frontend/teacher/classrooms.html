@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Classrooms - ClassIO</title>
+
+    <link rel="stylesheet" href="../css/features.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <h2 class="logo">ClassIO</h2>
+
+            <ul class="nav-links">
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a href="../pages/teacher-dashboard.html">Dashboard</a></li>
+                <li><a href="classrooms.html">Classrooms</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="knowledge-gap-map.html">Knowledge Gap Map</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="../pages/login.html" class="login-btn">Logout</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section class="teacher-classrooms">
+
+        <h1>My Classrooms</h1>
+
+        <p>
+            Create and manage your classrooms, share learning materials
+            and monitor student participation.
+        </p>
+
+    </section>
+
+
+    <section class="create-classroom">
+
+        <h2>Create a New Classroom</h2>
+
+        <div class="auth-container">
+
+            <form>
+
+                <label for="class-name">Classroom Name</label>
+                <input type="text" id="class-name" placeholder="Enter classroom name">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Enter subject name">
+
+                <label for="description">Description</label>
+                <textarea id="description" rows="4" placeholder="Enter classroom description"></textarea>
+
+                <button type="button">Create Classroom</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section class="teacher-classroom-list">
+
+        <h2>Created Classrooms</h2>
+
+        <div class="classroom-container">
+
+            <div class="classroom-card">
+
+                <h3>Java Programming</h3>
+
+                <p>Subject: Java Programming</p>
+
+                <p>Classroom Code: JAVA101</p>
+
+                <p>Students Enrolled: 40</p>
+
+                <p>Study Materials: 8</p>
+
+                <button type="button">View Classroom</button>
+
+            </div>
+
+
+            <div class="classroom-card">
+
+                <h3>Database Management</h3>
+
+                <p>Subject: Database Management</p>
+
+                <p>Classroom Code: DBMS202</p>
+
+                <p>Students Enrolled: 35</p>
+
+                <p>Study Materials: 6</p>
+
+                <button type="button">View Classroom</button>
+
+            </div>
+
+
+            <div class="classroom-card">
+
+                <h3>Web Development</h3>
+
+                <p>Subject: Web Development</p>
+
+                <p>Classroom Code: WEB303</p>
+
+                <p>Students Enrolled: 38</p>
+
+                <p>Study Materials: 10</p>
+
+                <button type="button">View Classroom</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="classroom-materials">
+
+        <h2>Classroom Study Materials</h2>
+
+        <table>
+
+            <tr>
+                <th>Material Name</th>
+                <th>Subject</th>
+                <th>Uploaded Date</th>
+                <th>Type</th>
+            </tr>
+
+            <tr>
+                <td>Java Basics Notes</td>
+                <td>Java Programming</td>
+                <td>18-11-2026</td>
+                <td>PDF</td>
+            </tr>
+
+            <tr>
+                <td>SQL Practice Guide</td>
+                <td>Database Management</td>
+                <td>19-11-2026</td>
+                <td>PDF</td>
+            </tr>
+
+            <tr>
+                <td>HTML and CSS Notes</td>
+                <td>Web Development</td>
+                <td>20-11-2026</td>
+                <td>PDF</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <footer>
+
+        <p>2026 ClassIO.learning</p>
+
+        <p>Learn Better. Plan Smarter. Grow Together.</p>
+
+    </footer>
+
+
+    <script src="../js/teacher.js"></script>
+
+</body>
+</html>

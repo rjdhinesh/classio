@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Gap Map - ClassIO</title>
+    <link rel="stylesheet" href="../css/features.css">
+</head>
+<body>
+
+    <nav>
+        <h2>ClassIO</h2>
+        <div>
+            <a href="../pages/index.html">Home</a>
+            <a href="../pages/teacher-dashboard.html">Dashboard</a>
+            <a href="classrooms.html">Classrooms</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="knowledge-gap-map.html">Knowledge Gap Map</a>
+            <a href="../pages/login.html">Logout</a>
+        </div>
+    </nav>
+
+    <section class="knowledge-container">
+
+        <h1>Classroom Knowledge Gap Map</h1>
+        <p>Understand your students' learning progress topic by topic.</p>
+
+        <div class="knowledge-filter">
+            <label for="class">Select Classroom:</label>
+            <select id="class">
+                <option>Java Programming</option>
+                <option>Database Management</option>
+                <option>Web Development</option>
+            </select>
+        </div>
+
+        <div class="knowledge-cards">
+
+            <div class="card">
+                <h3>Total Students</h3>
+                <h2>40</h2>
+            </div>
+
+            <div class="card">
+                <h3>Topics Covered</h3>
+                <h2>5</h2>
+            </div>
+
+            <div class="card">
+                <h3>Topics Needing Attention</h3>
+                <h2>2</h2>
+            </div>
+
+        </div>
+
+        <h2>Topic-wise Understanding</h2>
+
+        <div class="topic-card">
+            <h3>Variables</h3>
+            <p>Student Understanding: 90%</p>
+            <progress value="90" max="100"></progress>
+            <p>Most students understand this topic.</p>
+        </div>
+
+        <div class="topic-card">
+            <h3>Loops</h3>
+            <p>Student Understanding: 75%</p>
+            <progress value="75" max="100"></progress>
+            <p>Some students need additional practice.</p>
+        </div>
+
+        <div class="topic-card">
+            <h3>Arrays</h3>
+            <p>Student Understanding: 35%</p>
+            <progress value="35" max="100"></progress>
+            <p>Many students are struggling with this topic.</p>
+        </div>
+
+        <div class="topic-card">
+            <h3>Functions</h3>
+            <p>Student Understanding: 60%</p>
+            <progress value="60" max="100"></progress>
+            <p>Revision is recommended.</p>
+        </div>
+
+        <div class="topic-card">
+            <h3>OOPS</h3>
+            <p>Student Understanding: 85%</p>
+            <progress value="85" max="100"></progress>
+            <p>Most students have a good understanding.</p>
+        </div>
+
+        <h2>Teaching Recommendations</h2>
+
+        <div class="recommendation-card">
+            <h3>Focus on Arrays</h3>
+            <p>Conduct another explanation session and provide practice questions on arrays.</p>
+        </div>
+
+        <div class="recommendation-card">
+            <h3>Revise Functions</h3>
+            <p>Give students additional examples and a short practice quiz.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>2026 ClassIO.learning</p>
+
+    </footer>
+
+    <script src="../js/knowledge-gap.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teacher Attendance - ClassIO</title>
+
+    <link rel="stylesheet" href="../css/attendance.css">
+    <link rel="stylesheet" href="../css/features.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <h2 class="logo">ClassIO</h2>
+
+            <ul class="nav-links">
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a href="../pages/teacher-dashboard.html">Dashboard</a></li>
+                <li><a href="classrooms.html">Classrooms</a></li>
+                <li><a href="assignments.html">Assignments</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="knowledge-gap-map.html">Knowledge Gap Map</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="../pages/login.html" class="login-btn">Logout</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <section class="teacher-attendance">
+
+        <h1>Attendance Management</h1>
+
+        <p>
+            Record student attendance, monitor classroom participation
+            and manage attendance records.
+        </p>
+
+    </section>
+
+
+    <section class="attendance-selection">
+
+        <h2>Select Classroom</h2>
+
+        <div class="auth-container">
+
+            <form>
+
+                <label for="classroom">Classroom</label>
+
+                <select id="classroom">
+                    <option value="">Select Classroom</option>
+                    <option>Java Programming</option>
+                    <option>Database Management</option>
+                    <option>Web Development</option>
+                </select>
+
+                <label for="attendance-date">Date</label>
+
+                <input type="date" id="attendance-date">
+
+                <button type="button">Load Students</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section class="mark-attendance">
+
+        <h2>Mark Student Attendance</h2>
+
+        <table>
+
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Attendance Status</th>
+            </tr>
+
+            <tr>
+                <td>STU101</td>
+                <td>Arun Kumar</td>
+                <td>
+                    <select>
+                        <option>Present</option>
+                        <option>Absent</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>STU102</td>
+                <td>Priya</td>
+                <td>
+                    <select>
+                        <option>Present</option>
+                        <option>Absent</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>STU103</td>
+                <td>Rahul</td>
+                <td>
+                    <select>
+                        <option>Present</option>
+                        <option>Absent</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>STU104</td>
+                <td>Divya</td>
+                <td>
+                    <select>
+                        <option>Present</option>
+                        <option>Absent</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+
+        <div style="text-align: center; margin-top: 25px;">
+            <button type="button">Save Attendance</button>
+        </div>
+
+    </section>
+
+
+    <section class="attendance-summary">
+
+        <h2>Classroom Attendance Summary</h2>
+
+        <div class="attendance-card">
+            <h3>Total Students</h3>
+            <p>40</p>
+        </div>
+
+        <div class="attendance-card">
+            <h3>Present Students</h3>
+            <p>35</p>
+        </div>
+
+        <div class="attendance-card">
+            <h3>Absent Students</h3>
+            <p>5</p>
+        </div>
+
+        <div class="attendance-card">
+            <h3>Attendance Percentage</h3>
+            <p>87.5%</p>
+        </div>
+
+    </section>
+
+
+    <section class="student-attendance-records">
+
+        <h2>Student-wise Attendance Records</h2>
+
+        <table>
+
+            <tr>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Total Classes</th>
+                <th>Attended</th>
+                <th>Absent</th>
+                <th>Percentage</th>
+            </tr>
+
+            <tr>
+                <td>STU101</td>
+                <td>Arun Kumar</td>
+                <td>40</td>
+                <td>38</td>
+                <td>2</td>
+                <td>95%</td>
+            </tr>
+
+            <tr>
+                <td>STU102</td>
+                <td>Priya</td>
+                <td>40</td>
+                <td>35</td>
+                <td>5</td>
+                <td>87.5%</td>
+            </tr>
+
+            <tr>
+                <td>STU103</td>
+                <td>Rahul</td>
+                <td>40</td>
+                <td>30</td>
+                <td>10</td>
+                <td>75%</td>
+            </tr>
+
+            <tr>
+                <td>STU104</td>
+                <td>Divya</td>
+                <td>40</td>
+                <td>37</td>
+                <td>3</td>
+                <td>92.5%</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <footer>
+
+        <p>2026 ClassIO.learning</p>
+
+        <p>Learn Better. Plan Smarter. Grow Together.</p>
+
+    </footer>
+
+
+    <script src="../js/teacher.js"></script>
+
+</body>
+</html>
